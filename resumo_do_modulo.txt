@@ -6,3 +6,12 @@ AULA 7 - Módulo 2
 
 Resumo das classes e explicação sobre elas e como vão funcionar no projeto.
 Explicações sobre MVC, Model, View, Controller
+Criação do CalcController e inserção no index.html 
+
+AULA 8 - Módulo 2
+
+Getters e setters 
+Ajustes do CalcController.js
+
+AULA 9 - Módulo 2
+
