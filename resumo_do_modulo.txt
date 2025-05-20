@@ -1,0 +1,8 @@
+AULA 6 - Módulo 2
+
+Apenas o clone do repositório da Calculadora e a inserção do código <script> no fim do index.html.
+
+AULA 7 - Módulo 2
+
+Resumo das classes e explicação sobre elas e como vão funcionar no projeto.
+Explicações sobre MVC, Model, View, Controller
