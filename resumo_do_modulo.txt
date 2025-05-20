@@ -15,3 +15,13 @@ Ajustes do CalcController.js
 
 AULA 9 - Módulo 2
 
+DOM, Document Object Model.
+Mudança dos arquivos de português pra inglês, para boas práticas.
+Estrutura de objetos dentro do navegador.
+Alterações no HTML via JavaScript.
+
+AULA 10 - Módulo 2
+
+
+
+
