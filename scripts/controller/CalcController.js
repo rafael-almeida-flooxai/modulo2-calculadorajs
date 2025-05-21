@@ -13,8 +13,38 @@ class CalcController {
         this._currentDate;
         this.initialize();
         this.initButtonsEvents();
+        this.initKeyboard();
 
     }
+
+    pastefromClipboard() {
+
+        document.addEventListener('paste', e=>{
+            let text = e.clipboardData.getData('Text');
+
+            this.displayCalc = parseFloat(text); 
+
+        });
+
+    }
+
+    copyToClipboard() {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(this.displayCalc)
+                .then(() => console.log("copiado"))
+                .catch(err => console.error("erro:", err));
+        } else {
+            let input = document.createElement('input');
+            input.value = this.displayCalc;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+            console.log("copiado com execCommand");
+        }
+    }
+
+
 
     initialize() {
 
@@ -25,6 +55,61 @@ class CalcController {
         }, 1000)
 
         this.setLastNumberToDisplay();
+        this.pastefromClipboard();
+
+    }
+
+    initKeyboard() {
+
+        document.addEventListener('keyup', e => {
+
+            switch (e.key) {
+                case 'Escape':
+                    this.clearAll();
+                    break;
+
+                case 'Backspace':
+                    this.clearEntry();
+                    break;
+
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                case '%':
+                    this.addOperation(e.key);
+                    break
+
+                case 'Enter':
+                case '=':
+                    this.calc();
+                    break;
+
+                case '.':
+                case ',':
+                    this.addDot();
+                    break;
+
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    this.addOperation(parseInt(e.key));
+                    break
+
+                case 'c':
+                    if (e.ctrlKey) this.copyToClipboard();
+                    break
+            }
+
+            console.log(e.key);
+        });
 
     }
 
@@ -90,9 +175,9 @@ class CalcController {
         this._lastOperator = this.getLastItem();
 
         if (this._operation.length < 3) {
-            
+
             let firstItem = this._operation[0];
-            this._operation = [firstItem, this._lastOperator, this._lastNumber]; 
+            this._operation = [firstItem, this._lastOperator, this._lastNumber];
 
         }
 
@@ -292,7 +377,7 @@ class CalcController {
             });
         });
 
-        
+
     }
 
     setDisplayDateTime() {

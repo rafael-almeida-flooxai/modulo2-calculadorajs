@@ -75,8 +75,14 @@ AULA 21 - Modulo 2
 
 Correcoes de bugs com o ponto
 
+AULA 22 - Modulo 2 
 
+Aprendendo eventos de teclado
+Criacao do metodo apos o initialize.
 
+AULA 23 - Modulo 2
+
+Ctrl C + Ctrl V
 
 
 
