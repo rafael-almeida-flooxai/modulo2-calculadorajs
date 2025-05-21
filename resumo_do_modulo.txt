@@ -83,6 +83,17 @@ Criacao do metodo apos o initialize.
 AULA 23 - Modulo 2
 
 Ctrl C + Ctrl V
+CopytoClipboard e PasteCliboard inseridos no CalcController
+Limitacao para impedir que textos possam ser inseridos
+
+AULA 24 - Modulo 2
+
+Adicao de audio
+Reset de tempo para tocar sempre que pressionada alguma tecla ou algum clique
+
+AULA 25 - Modulo 2
+
+
 
 
 
