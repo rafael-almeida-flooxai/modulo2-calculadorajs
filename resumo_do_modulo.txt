@@ -48,6 +48,21 @@ Adicao de If, Else e Elseif para logica de operacoes e concatenacao de numeros.
 
 AULA 16 - Modulo 2
 
+Adicao de diversos metodos referentes ao calculo e concatenacao envolvendo arrays.
+Logica para sempre fazer operacoes em pares e somente depois receber os proximos numeros.
+Boas praticas dividindo codigos repetitivos em metodos.
+Comecando a funcionar as operacoes da Calculadora
+
+AULA 17 - Modulo 2
+
+Ensinamentos sobre for
+Adicao do for no CalcController.js para display na calculadora
+
+AULA 18 - Modulo 2
+
+Sinal do Igual adicionado
+
+
 
 
 
