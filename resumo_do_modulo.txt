@@ -24,11 +24,31 @@ AULA 10 - Módulo 2
 
 Adição da funcionalidade de data e hora em tempo real na Calculadora JS.
 
+21/05/25
+
 AULA 11 - Módulo 2 
 
 Query Selector explicado com botões
 
 AULA 12 - Modulo 2
+
+Event Listener adicionado no CalcController.js
+
+AULA 13 - Modulo 2
+
+Eventos click, drag e adição do pointer
+
+AULA 14 - Modulo 2
+
+Adicao do Switch com os cases dos numeros e operacoes
+
+AULA 15 - Modulo 2
+
+Adicao de If, Else e Elseif para logica de operacoes e concatenacao de numeros.
+
+AULA 16 - Modulo 2
+
+
 
 
 
