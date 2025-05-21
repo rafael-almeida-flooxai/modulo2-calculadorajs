@@ -22,6 +22,12 @@ Alterações no HTML via JavaScript.
 
 AULA 10 - Módulo 2
 
+Adição da funcionalidade de data e hora em tempo real na Calculadora JS.
+
+AULA 11 - Módulo 2 
+
+Query Selector explicado com botões
+
 
 
 
