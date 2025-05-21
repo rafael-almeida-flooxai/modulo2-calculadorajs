@@ -16,24 +16,38 @@ class CalcController {
 
         this.setDisplayDateTime();
 
-        setInterval(()=> {
+        setInterval(() => {
             this.setDisplayDateTime();
         }, 1000)
 
     }
 
-    initButtonsEvents(){
+    addEventListenerAll(element, events, fn) {
 
-        let buttons = document.querySelectorAll("#buttons > g, #parts > g")
+        events.split(' ').forEach(event => {
 
-        buttons.forEach((btn, index)=> {
-            btn.addEventListener('click', e=> {
-                console.log(btn.className.baseVal.replace("btn-", ""));
-            })
-        })
+            element.addEventListener(event, fn, false);
+
+        });
+
     }
 
-    setDisplayDateTime (){
+    initButtonsEvents() {
+
+        let buttons = document.querySelectorAll("#buttons > g, #parts > g");
+
+        buttons.forEach((btn, index) => {
+            this.addEventListenerAll(btn, 'click drag', e => {
+                console.log(btn.className.baseVal.replace("btn-", ""));
+            });
+
+            this.addEventListenerAll(btn, "mouseover mouseup mousedown", e => {
+                btn.style.cursor = "pointer";
+            });
+        });
+    }
+
+    setDisplayDateTime() {
         this.displayDate = this.currentDate.toLocaleDateString(this._locale);
         this.displayTime = this.currentDate.toLocaleTimeString(this._locale);
     }
